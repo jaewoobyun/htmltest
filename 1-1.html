@@ -4,24 +4,229 @@
         <title> 
             안녕하세요 변재우입니다.
         </title>
+
+        <link href="mystyle.css" type="text/css" rel="stylesheet" >
+        <base href="http://www.github.com">
+        
     </head>
     <body>
-        <h3> 개발자의 포맷 그대로 출력하기 </h3>
+        body
+        <a id="chapter1"> chapter 1</a>
+        <H1>WEB PROGRAMMING</H1>
+        <H1>H1</H1>
+        <H2>H2</H2>
+        <H3>H3</H3>
+        <H4>H4</H4>
+        <H5>H5</H5>
+        <hr>
+        
+        수평선 긋기 &lt;hr&gt;  
+        <h3> pre tag 로 개발자의 포맷 그대로 출력 </h3>
+            <p>
+                &lt;p&gt; 태그를 사용하면
+                여러개의 빈 칸은 하나로,
+                여러줄은 한 줄에 붙여 출력됩니다.
+            </p>
+            <pre>
+                    그러나 &lt;pre&gt; 태그를 사용하면
+                    사용자가 입력한 그대로 출력됩니다.
+                </pre>
+            <hr>
+        <h3> 특수 문자 , 기호, 심볼 삽입</h3>
+            <a href="https://www.w3schools.com/charsets/ref_html_utf8.asp">UTF-8</a><br>
+            10 &divide; 2 = 5 <br>
+            &radic;2 = 1.414 <br>
+            2 &nbsp;&nbsp; &lt; &nbsp;&nbsp;&nbsp; 3 <br>
+            &quot; quotation marks &quot;
+        <hr>
+        <h3> 텍스트 꾸미기 </h3>
         <p>
-            &lt;p&gt; 태그를 사용하면
-            여러개의 빈 칸은 하나로,
-            여러줄은 한 줄에 붙여 출력됩니다.
+            <bold>bold</bold><br>
+            <strong>strong</strong><br>
+            <em>em emphasize</em><br>
+            <i>i italics</i><br>
+            <b><i> b i </i></b><br>
+            <small>small</small><br>
+            <del>del</del><br>
+            <ins>ins</ins><br>
+            SomeWord<sup>sup</sup><br>
+            SomeWord<sub>sub</sub><br>
+            <mark>mark</mark><br>
         </p>
         <hr>
-        <pre>
-            그러나 &lt;pre&gt; 태그를 사용하면
-            사용자가 입력한 그대로 출력됩니다.
-        </pre>
+        <h3> block tags vs inline tags </h3>
+        block tags: &lt;p&gt;, &lt;h1&gt;, <mark>&lt;div&gt;</mark>, &lt;ul&gt; <br>
+        inline tags: &lt;strong&gt;, &lt;a&gt;, &lt;img&gt;, <mark>&lt;span&gt;</mark> <br>
+
+        <div style="background-color: skyblue; padding: 20px;">
+        block text
+        <span style="color: red">red text inline tags </span>
+        </div>
+        
+        <hr>
+        <h3> meta data </h3>
+        <ul id="metadata">
+            <li> metadata: data explaining data </li>
+                <ul>
+                    <li> picture data: location, timestamp</li>
+                    <li> audio data: play time, channels</li>
+                    <li> image data: width, height, color, pixel? </li>
+                </ul>
+            <li> ex) &lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt;, &lt;meta&gt; </li>
+            <li> meta tags have to be inside &lt;head&gt;</li>
+                <ul>
+                    <li> &lt;script&gt; can be inside &lt;body&gt;</li>
+                </ul>   
+        </ul>
+
+        <hr>
+        <h3> &lt;base&gt; tag, &lt;link&gt; tag, &lt;meta&gt; tag </h3>
+        base tag<br>
+        <a href= "http://www.github.com/JaewooByun">My github link</a> <br>
+        <a href="JaewooByun">base + /JaewooByun </a> <br>
+
+        link tag <br> 
+        <br>
+        meta tag <br>
+
+
+        <hr>
+        <h3> importing images, videos </h3>  
+        <a href="http://www.naver.com">
+            <img src="naver.png" alt= "네이버사이트">
+        </a>
+        
         <video src= "file:///Users/JaewooByun/Downloads/SampleVideo_1280x720_2mb.mp4"
                     width="640" height="480"
                     controls autoplay>
                 브라우저가 video 태그를 지원하지 않습니다.
                 </video>
+
+
+        <hr>
+        <h3> Lists ul, ol, li </h3>
+        <ul>
+            <li> this is an un-ordered list
+                <ul>
+                    <li>this is a list item</li>
+                    <li>list item doesn't need &lt;/li&gt; at the end </li>
+                </ul>
+            <li> this is an ordered list
+                <ol type="A">
+                    <li>ol types have 1, A, a, I, i... etc..</li>
+                    <li>this it self is an nested list</li>
+                </ol>
+            <li> 
+        </ul>
+
+        <hr>
+        <h3> Description Lists </h3>
+        <dl>
+            <dt><strong>is an Discription List dl</strong></dt>
+            <dt>This is a Discription Title dt</dt>
+                <dd>this is a description definition? dd</dd>
+        </dl>
+
+        <hr>
+        <h3> Table tags </h3>
+        table
+        <table>
+            <caption> caption </caption>
+                <tr>
+                  <th> thead</th>
+                  <th> th </th>
+                  <th> table head? </th>
+                </tr>
+                <tr>
+                  <td> td </td>
+                  <td> table data? </td>
+                  <td> td </td>
+                </tr>
+                <tr>
+                  <td>tr = table row?</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+                </tr>
+                <tr>
+                  <td>Ernst Handel</td>
+                  <td>Roland Mendel</td>
+                  <td>Austria</td>
+                </tr>
+                <tr>
+                  <td>Island Trading</td>
+                  <td>Helen Bennett</td>
+                  <td>UK</td>
+                </tr>
+                <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>Yoshi Tannamuri</td>
+                  <td>Canada</td>
+                </tr>
+                <tr>
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>Giovanni Rovelli</td>
+                  <td>Italy</td>
+                </tr>
+              </table>
+
+
+        <hr>
+        <form>
+            검색: <input type= "text" size="10" value = "">
+                <input type="button" value="Q1">
+                <button type="button">Q2</button><br>
+            submit 버튼: <input type="submit" value="전송1">
+                        <input  type="submit" value="전송2"><br>
+            reset 버튼: <input type="reset" value="리셋1">
+                        <input type="reset" value="리셋2">
+            이미지 버튼: <input type="image" src="media/button.png" alt="이미지 버튼">
+
+
+        </form>
+
+
+        <h3> checkbox </h3>
+        <form>
+            짜장면 <input type="checkbox" value="1">
+            짬뽕 <input type="checkbox" value="2">
+            탕수육 <input type="checkbox" value="3">
+        </form>
+
+        <h3> radio button</h3>
+        <form>
+            <input type="radio" name="china" value="1"> 짜장면
+            <input type="radio" name="china" value="2"> 짬뽕
+            <input type="radio" name="china" value="3"> 탕수육
+        </form>
+
+        <h3> combo box </h3>
+        <form>
+            <select name="china">
+                <option value="1"> 짜장면 </option>
+                <option value="2" selected> 짬뽕 </option>
+                <option value="3"> 탕수육 </option>
+            </select>
+        </form>
+
+        <h3> 스핀 버튼과 slider  </h3>
+        <form>
+            spin button (0.0~10.0시간):
+            <input type="number" min="0.0" max="10.0" step="0.5"><br><br>
+            Slider: 10&deg;
+            <input type="range" min="10" max="30" list="temperatures">30&deg;
+            <datalist id="temperatures">
+                <option value="12" label="Low">
+                <option value="20" label="Medium">
+                <option value="28" label="High">
+            </datalist>
+        </form>
+
+
+        <hr>
+        <h3> a tag anchors </h3>
+        <a href= "#chapter1"> go to chapter 1</a>
+
+
 
 
     </body>
